@@ -1,0 +1,33 @@
+
+    <div class="top-bg accent"></div>
+    <div class="center">
+    <div class="header accent p-24 h-90" fxLayout="row" fxLayoutAlign="start center">
+            <div fxLayout="column" fxLayoutAlign="center start">
+                <div fxLayout="row" fxLayoutAlign="start center">
+                    <div class="h1 mt-16">Registrar Actividad</div>
+                </div>
+              
+            </div>
+        </div>
+    <div class="content">
+        <form>
+            
+            <p>
+                <mat-form-field appearance="outline" fxFlex="100" class="pr-8">
+                    <mat-label>Descripción de la Actividad</mat-label>
+              <textarea matInput formControlName="html"
+              type="textarea" rows="5"></textarea>
+            </mat-form-field>
+            </p>
+            
+               <div class="text-right">
+                        <button mat-raised-button color="primary" >Aceptar</button>&nbsp;
+                        <button mat-raised-button color="danger" (click)="onClose()">Cancelar</button>
+                </div>
+              
+           
+          </form>
+
+    </div>
+
+        </div>
