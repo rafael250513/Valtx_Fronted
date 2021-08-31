@@ -11,7 +11,6 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FuseModule } from '@fuse/fuse.module';
 import { FuseSharedModule } from '@fuse/shared.module';
 import { FuseProgressBarModule, FuseSidebarModule, FuseThemeOptionsModule } from '@fuse/components';
-
 import { fuseConfig } from 'app/fuse-config';
 import { AppComponent } from 'app/app.component';
 import { LayoutModule } from 'app/layout/layout.module';
@@ -20,29 +19,28 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { LoginComponent } from './main/login/login.component';
+import { LoginComponent } from './main/model/login.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { ListadoActividadesComponent } from './main/actividades/listado-actividades/listado-actividades.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
-import { TblActividadesComponent } from './main/actividades/tbl-actividades/tbl-actividades.component';
 import { MatSort } from '@angular/material/sort';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { ListadoMarcacionesComponent } from './main/marcaciones/listado-marcaciones/listado-marcaciones.component';
-import { TblMarcacionesComponent } from './main/marcaciones/tbl-marcaciones/tbl-marcaciones.component';
-import { MensajeUsernameComponent } from './main/login/mensaje-username/mensaje-username.component';
-import { MensajePasswordComponent } from './main/login/mensaje-password/mensaje-password.component';
-import { PopupRegistroActividadComponent } from './main/actividades/popup-registro-actividad/popup-registro-actividad.component';
-import { ListadoUsuariosComponent } from './main/usuarios/listado-usuarios/listado-usuarios.component';
-import { TblUsuariosComponent } from './main/usuarios/tbl-usuarios/tbl-usuarios.component';
-import { ListadoImagenesComponent } from './main/usuarios/imagenes/listado-imagenes/listado-imagenes.component';
+import { MensajeUsernameComponent } from './main/model/mensaje-username.component';
+import { MensajePasswordComponent } from './main/model/mensaje-password.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { SampleComponent } from './main/sample/sample.component';
+import { PrincipalUsuariosComponent } from './main/usuarios/principal-usuarios/principal-usuarios.component';
+import { PopupRegistroUsuarioComponent } from './main/usuarios/popup-registro-usuario/popup-registro-usuario.component';
+import { TblUsuariosComponent } from './main/usuarios/tbl-usuarios/tbl-usuarios.component';
+import { PrincipalSucursalesComponent } from './main/sucursales/principal-sucursales/principal-sucursales.component';
+import { TblSucursalesComponent } from './main/sucursales/tbl-sucursales/tbl-sucursales.component';
+import { PrincipalProductosComponent } from './main/productos/principal-productos/principal-productos.component';
+import { TblProductosComponent } from './main/productos/tbl-productos/tbl-productos.component';
 
 
 const routes: Routes = [];
@@ -61,37 +59,17 @@ const appRoutes: Routes = [
         component: MensajeUsernameComponent
     },
     {
-        path: 'listado-usuarios',
-        component: ListadoUsuariosComponent
+        path: 'principal-usuarios',
+        component: PrincipalUsuariosComponent
     },
     {
-        path: 'tbl-usuarios',
-        component: TblUsuariosComponent
+        path: 'principal-sucursales',
+        component: PrincipalSucursalesComponent
     },
     {
-        path: 'listado-actividades',
-        component: ListadoActividadesComponent
+        path: 'principal-productos',
+        component: PrincipalProductosComponent
     },
-    {
-        path: 'tbl-actividades',
-        component: TblActividadesComponent
-    },
-    {
-        path: 'listado-marcaciones',
-        component: ListadoMarcacionesComponent
-    },
-    {
-        path: 'tbl-marcaciones',
-        component: TblMarcacionesComponent
-    },
-    {
-        path: 'popup-registro-actividad',
-        component: PopupRegistroActividadComponent
-    },
-    // {
-    //     path        :'sample/:id',
-    //     component   : SampleComponent
-    // },
     {
         path: '',
         pathMatch: 'full',
@@ -105,7 +83,7 @@ const appRoutes: Routes = [
 
 @NgModule({
     declarations: [
-        AppComponent, LoginComponent, ListadoActividadesComponent, TblActividadesComponent, ListadoMarcacionesComponent, TblMarcacionesComponent, MensajeUsernameComponent, MensajePasswordComponent, PopupRegistroActividadComponent, ListadoUsuariosComponent, TblUsuariosComponent, ListadoImagenesComponent
+        AppComponent, LoginComponent,  MensajeUsernameComponent, MensajePasswordComponent, PrincipalUsuariosComponent, PopupRegistroUsuarioComponent, TblUsuariosComponent, PrincipalSucursalesComponent, TblSucursalesComponent, PrincipalProductosComponent, TblProductosComponent
     ],
     imports: [
         BrowserModule,

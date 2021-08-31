@@ -9,50 +9,48 @@ export const navigation: FuseNavigation[] = [
         children : [
 
             {
-                id       : 'actividades',
-                title    : '🧑‍💻 ACTIVIDADES',
-                // translate: 'NAV.MANTENIMIENTO.TITLE',
-                type     : 'collapsable',
-                children : [
-                    {
-                        id        : 'listado-actividades',
-                        title     : '📄 Listado',
-                        type      : 'item',
-                        url       : '/listado-actividades',
-                        exactMatch: true
-                    }
-                ]
-            },
-            {
-                id       : 'marcacion',
-                title    : '⏰🖊 MARCACION',
-                // translate: 'NAV.MANTENIMIENTO.TITLE',
-                type     : 'collapsable',
-                children : [
-                    {
-                        id        : 'listado-marcaciones',
-                        title     : '📄 Listado ',
-                        type      : 'item',
-                        url       : '/listado-marcaciones',
-                        exactMatch: true
-                    }
-                ]
-            },
-            {
                 id       : 'usuarios',
-                title    : '👥 USUARIOS',
-                // translate: 'NAV.MANTENIMIENTO.TITLE',
+                title    : '🧑‍💻 USUARIOS',
                 type     : 'collapsable',
                 children : [
                     {
-                        id        : 'listado-usuarios',
-                        title     : '📄 Listado ',
+                        id        : 'principal-usuarios',
+                        title     : '📄 Mantenimiento ',
                         type      : 'item',
-                        url       : '/listado-usuarios',
+                        url       : '/principal-usuarios',
+                        exactMatch: true
+                    }
+                ]
+            },
+            {
+                id       : 'sucursales',
+                title    : '🏣 SUCURSALES',
+                type     : 'collapsable',
+                children : [
+                    {
+                        id        : 'principal-sucursales',
+                        title     : '📄 Mantenimiento ',
+                        type      : 'item',
+                        url       : '/principal-sucursales',
+                        exactMatch: true
+                    }
+                ]
+            },
+            {
+                id       : 'productos',
+                title    : '🥦 PRODUCTOS',
+                type     : 'collapsable',
+                children : [
+                    {
+                        id        : 'principal-productos',
+                        title     : '📄 Mantenimiento ',
+                        type      : 'item',
+                        url       : '/principal-productos',
                         exactMatch: true
                     }
                 ]
             }
+
 
         ]
     }

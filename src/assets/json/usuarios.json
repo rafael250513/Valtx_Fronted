@@ -1,0 +1,33 @@
+{
+    "usuario":[
+        {
+            "codi_empl_per": "0732    ",
+            "vc_nombre": "erik",
+            "password": "123456",
+            "nom_emp_per": "ERIK PAUL",
+            "ape_pat_per": "BUJAICO",
+            "ape_mat_per": "MORALES",
+            "id_perfil":"1"
+        },
+        {
+            "codi_empl_per": "0900    ",
+            "vc_nombre": "rafael",
+            "password": "SAludpol2020",
+            "nom_emp_per": "RAFAEL STIVEN",
+            "ape_pat_per": "AZAÑA",
+            "ape_mat_per": "GIL",
+            "id_perfil":"2"
+        },
+        {
+            "codi_empl_per": "0285    ",
+            "vc_nombre": "rrodriguez",
+            "password": "1234567",
+            "nom_emp_per": "REYMAR JOSUE AGUSTIN",
+            "ape_pat_per": "RODRIGUEZ",
+            "ape_mat_per": "CORDOVA",
+            "id_perfil":"3"
+        }
+    ]
+     
+
+}

@@ -7,7 +7,7 @@ import { FuseConfigService } from '@fuse/services/config.service';
 import { FuseNavigationService } from '@fuse/components/navigation/navigation.service';
 import { FusePerfectScrollbarDirective } from '@fuse/directives/fuse-perfect-scrollbar/fuse-perfect-scrollbar.directive';
 import { FuseSidebarService } from '@fuse/components/sidebar/sidebar.service';
-import { ServiciosService } from 'app/main/actividades/tbl-actividades/servicios.service';
+import { ServiciosService } from 'app/main/controller/servicios.service';
 
 @Component({
     selector     : 'navbar-vertical-style-1',

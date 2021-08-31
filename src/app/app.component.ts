@@ -14,7 +14,6 @@ import { FuseTranslationLoaderService } from '@fuse/services/translation-loader.
 import { navigation } from 'app/navigation/navigation';
 import { locale as navigationEnglish } from 'app/navigation/i18n/en';
 import { locale as navigationTurkish } from 'app/navigation/i18n/tr';
-import { ServiciosService } from './main/actividades/tbl-actividades/servicios.service';
 
 @Component({
     selector   : 'app',
@@ -50,8 +49,7 @@ export class AppComponent implements OnInit, OnDestroy
         private _fuseSplashScreenService: FuseSplashScreenService,
         private _fuseTranslationLoaderService: FuseTranslationLoaderService,
         private _translateService: TranslateService,
-        private _platform: Platform,
-        public json: ServiciosService
+        private _platform: Platform
     )
     {
         // Get default navigation
@@ -128,11 +126,7 @@ export class AppComponent implements OnInit, OnDestroy
     ngOnInit(): void
     {
 
-        this.json.disparadorFavoritos.subscribe( data =>{
-            console.log("Recibiendo data Marcacion 4", data);
-            this.listUserIdModule.push(data);
-          })
-          console.log("Recibiendo data Module 2.2", this.listUserIdModule);
+        
 
 
         // Subscribe to config changes
